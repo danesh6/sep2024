@@ -1,0 +1,42 @@
+<html>
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Room Reservation Form</title> 
+</head> <body> 
+<form> 
+<p style="background-color:rgb(176,227,230);">
+<legend><strong>Personal details</strong>
+</legend> 
+<label for="fullName">Full Name:</label> 
+<input type="text" id="fullName" name="fullName">
+<label for="icNo">IC No.:</label>
+ <input type="text" id="icNo" name="icNo"><br><br>
+ <label for="email">Email address:</label> 
+<input type="email" id="email" name="email">
+ <label for="contactNo">Contact No.:</label> 
+ <input type="text" id="contactNo" name="contactNo"><br> 
+<br><br>
+<legend><strong>Reservations</strong></legend>
+ <label for="rooms">Number of Room(s):</label> 
+ <select id="rooms" name="rooms"> <option value="" selected>Selection-</option></select><br><br> 
+<label for="adults">Number of Adult(s):</label> 
+<select id="adults" name="adults"> <option value="" selected>-Selection-</option></select><br><br>
+ <label for="children">Number of Children:</label>
+<select id="children" name="children"> <option value="" selected>-Selection-</option></select><br><br> 
+<label for="checkin">Check-in Date:</label> <input type="date" id="checkin" name="checkin"><br><br> 
+<label for="checkout">Check-out Date:</label> <input type="date" id="checkout" name="checkout"><br><br>
+ <label>Room Preference:</label><br> <input type="radio" id="deluxe" name="roomPreference" value="Deluxe">
+ <label for="deluxe">Deluxe</label> <input type="radio" id="suite" name="roomPreference" value="Suite"> 
+ <label for="suite">Suite</label><br><br> <label for="paymentMethod">Payment Method:</label>
+ <input type="radio" id="cash" name="paymentMethod" value="Cash"> 
+<label for="cash">Cash</label> <br> <input type="radio" id="tng" name="paymentMethod" value="TNG">
+<label for="tng">TNG</label><br><br>
+<label for="specialRequests">Do you have any special requests?</label><br>
+    <textarea id="specialRequests" name="specialRequests" rows="4" cols="50">
+    </textarea><br>  <input type="submit" value="Submit"> 
+    <input type="reset" value="Reset"> 
+</form>
+</p>
+ </body>
+  </html>
